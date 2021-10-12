@@ -1,0 +1,7 @@
+def datefunction(year, month, day):
+#     [year, month, day, weekday, wichinM,weekinY]
+    d = datetime(year,month,day)
+    weekday = d.weekday()
+    whichinM = (day-1)//7+1
+    weekinY = d.isocalendar()[1]
+    return year, month, day, weekday, whichinM, weekinY
